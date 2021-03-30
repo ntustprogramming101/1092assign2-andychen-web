@@ -124,7 +124,9 @@ void draw() {
       groundhogYTop < soldierYButton &&
       groundhogYButton > soldierYTop){
       */
-      if (groundhogY <= soldierY &&
+      
+      if (groundhogY == soldierY &&
+      groundhogX <= soldierX+80 &&
       groundhogX <= soldierX) {
         groundhogX = groundhogInitialX;
         groundhogY = groundhogInitialY;
